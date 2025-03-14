@@ -15,11 +15,11 @@ function Tabs() {
 
   return (
     <div>
-      <div className="flex border-b border-gray-300" role="tablist">
+      <div className="flex flex-wrap gap-2" role="tablist">
         {tabs.map((tab) => (
           <button
             key={tab.name}
-            className={`p-2 cursor-pointer border-b-2 ${activeTab === tab.name ? 'border-emerald-600 text-emerald-600' : 'border-transparent text-gray-600 hover:text-emerald-600'}`}
+            className={`p-2 cursor-pointer rounded-full ${activeTab === tab.name ? 'bg-emerald-600 text-white' : 'bg-gray-200 text-gray-600 hover:bg-emerald-600 hover:text-white'}`}
             onClick={() => setActiveTab(tab.name)}
             role="tab"
             aria-selected={activeTab === tab.name}
