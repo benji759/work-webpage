@@ -1,5 +1,6 @@
 import React from 'react';
 import Tabs from './Tabs';
+import Experience from './Experience';
 
 function App() {
   return (
@@ -18,17 +19,7 @@ function App() {
       </section>
       <section className="mt-8" aria-labelledby="experience-heading">
         <h2 id="experience-heading" className="text-3xl text-emerald-600">Experience</h2>
-        <div className="mt-4">
-          <h3 className="text-2xl text-gray-800">Job Title</h3>
-          <p className="text-lg text-gray-600">Company Name</p>
-          <p className="text-lg text-gray-600">Dates Worked</p>
-          <ul className="list-disc list-inside mt-2 text-gray-700">
-            <li>Responsibility 1</li>
-            <li>Responsibility 2</li>
-            <li>Responsibility 3</li>
-          </ul>
-        </div>
-        {/* Add more job experiences as needed */}
+        <Experience />
       </section>
       <footer className="mt-8 text-center text-gray-600" role="contentinfo">
         <p>This page is written in JavaScript, React, and Tailwind CSS.</p>
