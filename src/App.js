@@ -31,6 +31,10 @@ function App() {
         </div>
         {/* Add more job experiences as needed */}
       </section>
+      <footer className="mt-8">
+        <p>This page is written in JavaScript, React, and Tailwind CSS.</p>
+        <p>Source code is available on <a href="https://github.com/your-repo-url" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+      </footer>
     </div>
   );
 }
