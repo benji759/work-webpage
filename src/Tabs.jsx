@@ -12,11 +12,11 @@ function Tabs() {
 
   return (
     <div>
-      <div className="flex">
+      <div className="flex border-b border-gray-300">
         {tabs.map((tab) => (
           <button
             key={tab.name}
-            className={`p-2 ${activeTab === tab.name ? 'border-b-2 border-blue-500' : ''}`}
+            className={`p-2 cursor-pointer border-b-2 ${activeTab === tab.name ? 'border-emerald-600 text-emerald-600' : 'border-transparent text-gray-600 hover:text-emerald-600'}`}
             onClick={() => setActiveTab(tab.name)}
           >
             {tab.name}
