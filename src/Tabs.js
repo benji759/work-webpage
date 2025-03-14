@@ -25,9 +25,11 @@ function Tabs() {
       </div>
       <div className="mt-4">
         {tabs.map((tab) => (
-          <div key={tab.name} className={`${activeTab === tab.name ? 'block' : 'hidden'}`}>
-            {tab.content}
-          </div>
+          activeTab === tab.name && (
+            <div key={tab.name}>
+              {tab.content}
+            </div>
+          )
         ))}
       </div>
     </div>
