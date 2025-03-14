@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 
 const tabs = [
-  { name: 'Design', content: 'Sketch, Figma, Wireframes' },
-  { name: 'Frontend', content: 'React, Vue, Angular' },
-  { name: 'Backend', content: 'Node.js, Express, MongoDB' },
-  { name: 'DevOps', content: 'Docker, Kubernetes, CI/CD' },
+  { name: 'Frontend', content: 'React, Vue, Angular, jQuery, Ajax, Webpack, Vanilla JavaScript, HTML (WCAG), CSS (Sass, LESS, Bootstrap), Responsive & Mobile-first design' },
+  { name: 'Backend', content: 'Node.js, Express, MongoDB, Ruby on Rails (Active Record, Devise, Delayed Job), PHP (Laravel, Eloquent, Slim, PHPUnit, WordPress), SQL (PostgreSQL, MySQL, SQL Server, Migrations)' },
+  { name: 'DevOps', content: 'Docker, Kubernetes, CI/CD (Travis, Pipelines, Trunk-based development), AWS, Heroku, GitHub, Bitbucket, Dependency management (Snyk), Debugging & Support (Instana, Sentry)' },
+  { name: 'Project Management', content: 'Agile (Scrum, Estimation, Retrospectives, Scrum mastering), Azure DevOps, Jira, Trello, Slack, Google Workspace, Requirements gathering, User stories, Backlog curation' },
+  { name: 'UX & Design', content: 'Sketch, Wireframes, Google Analytics, User advocacy, Diagramming (Miro)' },
+  { name: 'Sustainability', content: 'Carbon footprint assessments (Scope 1-3), Carbon reduction strategies, GHG Protocol, Sustainability project management, Environmental impact analysis, Renewable energy transitions, Stakeholder engagement in sustainability' },
+  { name: 'Languages', content: 'Italian (strong conversational), French (basic conversational), Spanish (basic conversational)' }
 ];
 
 function Tabs() {
