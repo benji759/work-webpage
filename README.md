@@ -19,7 +19,7 @@ To run the app in development mode, follow these steps:
 
 2. Start the development server:
    ```sh
-   npm start
+   npm run dev
    ```
 
 This will launch the app in your default web browser.
@@ -28,6 +28,7 @@ This will launch the app in your default web browser.
 - JavaScript
 - React
 - Tailwind CSS
+- Vite
 
 ## Commit Conventions
 
