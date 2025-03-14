@@ -7,8 +7,8 @@ function App() {
       <header className="flex justify-between items-center" role="banner">
         <h1 className="text-5xl text-emerald-600">Benji H</h1>
         <div>
-          <a href="https://www.linkedin.com/in/janedoe" target="_blank" rel="noopener noreferrer" className="text-cyan-600 hover:text-cyan-800" aria-label="LinkedIn Profile">LinkedIn</a>
-          <a href="mailto:jane.doe@example.com" className="ml-4 text-cyan-600 hover:text-cyan-800" aria-label="Send Email">Email</a>
+          <a href="https://www.linkedin.com/in/benji-holland-dev" target="_blank" rel="noopener noreferrer" className="text-cyan-600 hover:text-cyan-800" aria-label="LinkedIn Profile">LinkedIn</a>
+          <a href="mailto:benjiholland@protonmail.com" className="ml-4 text-cyan-600 hover:text-cyan-800" aria-label="Send Email">Email</a>
         </div>
       </header>
       <p className="mt-4 text-xl text-gray-700">An experienced software developer with experience in the health and sustainability sectors.</p>
