@@ -1,2 +1,16 @@
 /* Input file for Tailwind CSS */
 @import "tailwindcss";
+
+
+body {
+    font-family: "Geist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-family: "Josefin Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}

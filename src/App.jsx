@@ -12,7 +12,6 @@ function App() {
         </div>
       </header>
       <p className="mt-4">An experienced software developer with experience in the health and sustainability sectors.</p>
-      <p>Looking for purposeful work 3 or 4 days per week hybrid in London or South East Essex or remote.</p>
       <section className="mt-8">
         <h2>Skills</h2>
         <Tabs />
