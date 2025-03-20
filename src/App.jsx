@@ -12,7 +12,10 @@ function App() {
           <a href="mailto:benjiholland@protonmail.com" className="ml-4 text-cyan-600 hover:text-cyan-800" aria-label="Send Email">Email</a>
         </div>
       </header>
-      <p className="mt-4 text-xl text-gray-700">An experienced software developer with experience in the health and sustainability sectors.</p>
+      <div className="inline-block w-full">
+        <img src="/src/headshot.png" alt="Picture of Benji" className="w-72 h-72 rounded-full shadow shadow-gray-400 shadow-lg mx-auto mt-4 lg:mx-0 lg:float-left lg:mr-8" />
+      </div>
+      <p className="mt-4 text-xl text-gray-700">A full stack software developer experienced in health tech and sustainability</p>
       <section className="mt-8" aria-labelledby="skills-heading">
         <h2 id="skills-heading" className="text-3xl text-emerald-600">Skills</h2>
         <Tabs />
