@@ -57,10 +57,13 @@ function Experience() {
   return (
     <div>
       {experiences.map((job, index) => (
-        <div key={index} className="mt-4">
-          <h3 className="text-2xl text-gray-800">{job.title}</h3>
-          <p className="text-lg text-gray-600">{job.company}</p>
-          <p className="text-lg text-gray-600">{job.dates}</p>
+        <div key={index} className="mt-8 relative pt-2">
+          <div className="absolute top-0 left-0 w-48 h-24 border-t-2 border-l-2 border-cyan-600"></div>
+          <div className="pl-3">
+            <h3 className="text-2xl text-gray-800">{job.title}</h3>
+            <p className="text-lg text-gray-600">{job.company}</p>
+            <p className="text-lg text-gray-600">{job.dates}</p>
+          </div>
           <ul className="list-disc list-inside mt-2 text-gray-700">
             {job.responsibilities.map((resp, i) => (
               <li key={i}>{resp}</li>
