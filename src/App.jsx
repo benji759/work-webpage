@@ -27,7 +27,8 @@ function App() {
       </section>
       <footer className="mt-8 text-center text-gray-600" role="contentinfo">
         <p>This page is written in JavaScript, React, and Tailwind CSS.</p>
-        <p>Source code is available on <a href="https://github.com/benji759/work-webpage" target="_blank" rel="noopener noreferrer" className="text-cyan-600 hover:text-cyan-800" aria-label="GitHub Repository">GitHub</a>.</p>
+        <p>Icons provided by <a href="https://devicon.dev/" target="_blank" rel="noopener noreferrer" className="text-cyan-600 hover:text-cyan-800">Devicon</a>.</p>
+        <p>Source code available on <a href="https://github.com/benji759/work-webpage" target="_blank" rel="noopener noreferrer" className="text-cyan-600 hover:text-cyan-800" aria-label="GitHub Repository">GitHub</a>.</p>
       </footer>
     </div>
   );

@@ -1,13 +1,143 @@
 import React, { useState } from 'react';
 
 const tabs = [
-  { name: 'Frontend', content: 'React, Vue, Angular, jQuery, Ajax, Webpack, Vanilla JavaScript, HTML (WCAG), CSS (Sass, LESS, Bootstrap), Responsive & Mobile-first design' },
-  { name: 'Backend', content: 'Node.js, Express, MongoDB, Ruby on Rails (Active Record, Devise, Delayed Job), PHP (Laravel, Eloquent, Slim, PHPUnit, WordPress), SQL (PostgreSQL, MySQL, SQL Server, Migrations)' },
-  { name: 'DevOps', content: 'Docker, Kubernetes, CI/CD (Travis, Pipelines, Trunk-based development), AWS, Heroku, GitHub, Bitbucket, Dependency management (Snyk), Debugging & Support (Instana, Sentry)' },
-  { name: 'Project Management', content: 'Agile (Scrum, Estimation, Retrospectives, Scrum mastering), Azure DevOps, Jira, Trello, Slack, Google Workspace, Requirements gathering, User stories, Backlog curation' },
-  { name: 'UX & Design', content: 'Sketch, Wireframes, Google Analytics, User advocacy, Diagramming (Miro)' },
-  { name: 'Sustainability', content: 'Carbon footprint assessments (Scope 1-3), Carbon reduction strategies, GHG Protocol, Sustainability project management, Environmental impact analysis, Renewable energy transitions, Stakeholder engagement in sustainability' },
-  { name: 'Languages', content: 'Italian (strong conversational), French (basic conversational), Spanish (basic conversational)' }
+  { 
+    name: 'Frontend', 
+    content: (
+      <>
+        <div className="mb-4 max-w-4xl grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2 text-5xl">
+          <i className="devicon-react-original colored" title="React"></i>
+          <i className="devicon-vuejs-plain colored" title="Vue.js"></i>
+          <i className="devicon-angularjs-plain colored" title="Angular"></i>
+          <i className="devicon-jquery-plain colored" title="jQuery"></i>
+          <i className="devicon-javascript-plain colored" title="JavaScript"></i>
+          <i className="devicon-html5-plain colored" title="HTML5"></i>
+          <i className="devicon-css3-plain colored" title="CSS3"></i>
+          <i className="devicon-sass-original colored" title="Sass"></i>
+          <i className="devicon-less-plain-wordmark colored" title="LESS"></i>
+          <i className="devicon-bootstrap-plain colored" title="Bootstrap"></i>
+          <i className="devicon-webpack-plain colored" title="Webpack"></i>
+        </div>
+        <ul className="list-disc list-inside">
+          <li>Responsive & Mobile-first design</li>
+        </ul>
+      </>
+    )
+  },
+  { 
+    name: 'Backend', 
+    content: (
+      <>
+        <div className="mb-4 max-w-4xl grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2 text-5xl">
+          <i className="devicon-nodejs-plain colored" title="Node.js"></i>
+          <i className="devicon-express-original colored" title="Express"></i>
+          <i className="devicon-mongodb-plain colored" title="MongoDB"></i>
+          <i className="devicon-ruby-plain colored" title="Ruby on Rails"></i>
+          <i className="devicon-php-plain colored" title="PHP"></i>
+          <i className="devicon-laravel-plain colored" title="Laravel"></i>
+          <i className="devicon-mysql-plain colored" title="MySQL"></i>
+          <i className="devicon-postgresql-plain colored" title="PostgreSQL"></i>
+          <i className="devicon-sqlite-plain colored" title="SQL"></i>
+        </div>
+        <ul className="list-disc list-inside">
+          <li>Active Record</li>
+          <li>Devise</li>
+          <li>Delayed Job</li>
+          <li>Eloquent</li>
+          <li>Slim</li>
+          <li>PHPUnit</li>
+          <li>WordPress</li>
+          <li>SQL Server</li>
+          <li>Migrations</li>
+        </ul>
+      </>
+    )
+  },
+  { 
+    name: 'DevOps', 
+    content: (
+      <>
+        <div className="mb-4 max-w-4xl grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2 text-5xl">
+          <i className="devicon-docker-plain colored" title="Docker"></i>
+          <i className="devicon-kubernetes-plain colored" title="Kubernetes"></i>
+          <i className="devicon-amazonwebservices-plain colored" title="AWS"></i>
+          <i className="devicon-heroku-original colored" title="Heroku"></i>
+          <i className="devicon-github-original colored" title="GitHub"></i>
+          <i className="devicon-bitbucket-original colored" title="Bitbucket"></i>
+        </div>
+        <ul className="list-disc list-inside">
+          <li>CI/CD (Travis, Pipelines, Trunk-based development)</li>
+          <li>Dependency management (Snyk)</li>
+          <li>Debugging & Support (Instana, Sentry)</li>
+        </ul>
+      </>
+    )
+  },
+  { 
+    name: 'Project Management', 
+    content: (
+      <>
+        <div className="mb-4 max-w-4xl grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2 text-5xl">
+          <i className="devicon-jira-plain colored" title="Jira"></i>
+          <i className="devicon-trello-plain colored" title="Trello"></i>
+          <i className="devicon-slack-plain colored" title="Slack"></i>
+        </div>
+        <ul className="list-disc list-inside">
+          <li>Agile (Scrum, Estimation, Retrospectives, Scrum mastering)</li>
+          <li>Azure DevOps</li>
+          <li>Google Workspace</li>
+          <li>Requirements gathering</li>
+          <li>User stories</li>
+          <li>Backlog curation</li>
+        </ul>
+      </>
+    )
+  },
+  { 
+    name: 'UX & Design', 
+    content: (
+      <ul className="list-disc list-inside">
+        <li>Sketch</li>
+        <li>Wireframes</li>
+        <li>Google Analytics</li>
+        <li>User advocacy</li>
+        <li>Diagramming (Miro)</li>
+      </ul>
+    )
+  },
+  { 
+    name: 'Sustainability', 
+    content: (
+      <ul className="list-disc list-inside">
+        <li>Carbon footprint assessments (Scope 1-3)</li>
+        <li>Carbon reduction strategies</li>
+        <li>GHG Protocol</li>
+        <li>Sustainability project management</li>
+        <li>Environmental impact analysis</li>
+        <li>Renewable energy transitions</li>
+        <li>Stakeholder engagement in sustainability</li>
+      </ul>
+    )
+  },
+  { 
+    name: 'Languages', 
+    content: (
+      <ul className="list-disc list-inside">
+        <li>
+          <span className="font-bold text-red-600">English</span> - Native/Fluent
+        </li>
+        <li>
+        <span className="font-bold text-emerald-600">Italian</span> - Strong conversational
+        </li>
+        <li>
+        <span className="font-bold text-orange-600">Spanish</span> - Basic conversational
+        </li>
+        <li>
+        <span className="font-bold text-cyan-600">French</span> - Basic conversational
+        </li>
+      </ul>
+    )
+  }
 ];
 
 function Tabs() {
@@ -15,7 +145,7 @@ function Tabs() {
 
   return (
     <div>
-      <div className="flex flex-wrap gap-2" role="tablist">
+      <div className="flex flex-wrap gap-2 mt-4" role="tablist">
         {tabs.map((tab) => (
           <button
             key={tab.name}
