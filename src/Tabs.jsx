@@ -41,13 +41,8 @@ const tabs = [
           <i className="devicon-ruby-plain colored" title="Ruby on Rails"></i>
         </div>
         <ul className="list-disc list-inside">
-          <li>Active Record</li>
-          <li>Devise</li>
-          <li>Delayed Job</li>
-          <li>Eloquent</li>
           <li>Migrations</li>
           <li>PHPUnit</li>
-          <li>WordPress</li>
         </ul>
       </>
     )
@@ -69,9 +64,9 @@ const tabs = [
           <i className="devicon-vercel-plain colored" title="Vercel"></i>
         </div>
         <ul className="list-disc list-inside">
-          <li>CI/CD (Travis, Pipelines, Trunk-based development)</li>
-          <li>Dependency management (Snyk)</li>
-          <li>Debugging & Support (Instana, Sentry)</li>
+          <li>CI/CD</li>
+          <li>Dependency management</li>
+          <li>Debugging & Support</li>
         </ul>
       </>
     )
